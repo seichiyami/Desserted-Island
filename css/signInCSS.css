@@ -3,12 +3,12 @@
 }
 
 .center_box{
-	width:300px;
+	width:700px;
 	margin:10% auto;
 	text-align: center;
 }
 html{
-	background-image:url(images/islandBkgrd.jpg);
+	background-image:url(../images/islandBkgrd.jpg);
 	background-size: cover;
 	background-position: top center !important;
 	background-repeat: no-repeat !important;
@@ -18,5 +18,6 @@ html{
 }
 h1{
 	font-family:  'Oswald', sans-serif;
-	color: #CCC;
+	color: #333;
+	font-size:50px;
 }
