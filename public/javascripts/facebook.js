@@ -1,7 +1,15 @@
-  
+ /*
+ Code Citings:
+ For accessing the facebook api:
+ facebook.com/developers
+ 
+ For hiding and showing buttons
+ http://www.sitepoint.com/forums/showthread.php?23219-Make-a-button-appear-and-disappear-with-JS
+ */ 
+ 
   function startApp() {
     if(document.layers) document.layers['nextB'].visibility="show";
-  if(document.getElementById) document.getElementById("nextB").style.visibility="visible";
+   if(document.getElementById) document.getElementById("nextB").style.visibility="visible";
   if(document.all) document.all.nextB.style.visibility="visible";
       
       $("#nextB button").on("click", function(event){
