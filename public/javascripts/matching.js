@@ -1,12 +1,5 @@
+//our database of ppl
 var people = [];
-var person = {
-    firstName:"John",
-    lastName:"Doe",
-    email:"hello@gmail.com",
-    favList: [1, 1, 1, 1],
-    match: people[0]
-    //add photo
-};
 people[0] = {
     firstName:"Jon",
     lastName:"Doe",
@@ -25,7 +18,6 @@ people[2]= {
     firstName:"Jo",
     lastName:"Doe",
     email:"hello@gmail.com",
-
     favList : [2, 2, 4 ,1]
     //add photo
 };
@@ -36,14 +28,59 @@ people[3] = {
     favList: [3, 3, 1 ,2]
     //add photo
 };
+people[4] = {
+    firstName:"Johnson",
+    lastName:"Doe",
+    email:"hello@gmail.com",
+    favList: [2, 5, 6, 7]
+    //add photo
+};
+people[5] = {
+    firstName:"Son",
+    lastName:"Doe",
+    email:"hello@gmail.com",
+    favList: [6,7, 6, 10]
+    //add photo
+};
+people[6] = {
+    firstName:"Lon",
+    lastName:"Doe",
+    email:"hello@gmail.com",
+  favList: [4, 8, 4, 5]
+    //add photo
+};
+people[7]= {
+    firstName:"Rolando",
+    lastName:"Doe",
+    email:"hello@gmail.com",
+    favList : [6, 2, 1 ,9]
+    //add photo
+};
+people[8] = {
+    firstName:"Jackson",
+    lastName:"Doe",
+    email:"hello@gmail.com",
+    favList: [1, 9, 3 ,8]
+    //add photo
+};
 
+
+//our user
+var person = {
+    firstName:"John",
+    lastName:"Doe",
+    email:"hello@gmail.com",
+    favList: [1, 1, 1, 1],
+    match: people[0]
+    //add photo
+};
 
 $("#submitButton button").on("click", function(event){
-      display();
+      setFavs();
 
 });
 
-function display() {
+function setFavs() {
     var chosenBook = document.getElementById("books").selectedIndex;
 	var chosenMovie = document.getElementById("movies").selectedIndex;
 	var chosenFood = document.getElementById("food").selectedIndex;
@@ -75,7 +112,7 @@ function matching(){
     	
 	} 
 	var output = JSON.stringify(person.match);
-	$('.center-box .output').append(output);
+	$('.center_box .output').append(output);
 
 	console.log("Your match = ", person.match);
 }
