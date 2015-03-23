@@ -40,6 +40,7 @@ people[3] = {
 
 $("#submitButton button").on("click", function(event){
       display();
+
 });
 
 function display() {
@@ -47,16 +48,10 @@ function display() {
 	var chosenMovie = document.getElementById("movies").selectedIndex;
 	var chosenFood = document.getElementById("food").selectedIndex;
 	var chosenGame = document.getElementById("games").selectedIndex;
-	console.log (chosenBook);
-	console.log (chosenMovie);
-	console.log (chosenFood);
-	console.log (chosenGame);
 	person.favList[0]= chosenBook;
 	person.favList[1]= chosenMovie;
 	person.favList[2]= chosenFood;
 	person.favList[3]= chosenGame;
-	console.log("person array", person.favList);
-	console.log("personss array", people[1].favList);
   	matching();
 }
 function matching(){
@@ -79,6 +74,8 @@ function matching(){
     	}
     	
 	} 
+	var output = JSON.stringify(person.match);
+	$('.center-box .output').append(output);
 
-	console.log("your match = ", person.match);
+	console.log("Your match = ", person.match);
 }
