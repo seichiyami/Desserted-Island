@@ -1,0 +1,23 @@
+*{
+	font-family: sans-serif;
+}
+
+.center_box{
+	width:700px;
+	margin:10% auto;
+	text-align: center;
+}
+html{
+	background-image:url(../images/islandBkgrd.jpg);
+	background-size: cover;
+	background-position: top center !important;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed;
+	
+	background-color:#6CC;
+}
+h1{
+	font-family:  'Oswald', sans-serif;
+	color: #333;
+	font-size:50px;
+}

@@ -1,0 +1,14 @@
+.center_box
+{
+	width:500px;
+	margin:10% auto;
+	padding: 10px 20px;
+}
+html{
+	background-image: url(../images/islandBkgrd.jpg);
+}
+h4{
+	font-family: sans-serif;
+	padding-top:20px;
+	padding-bottom:20px;
+}
