@@ -18,6 +18,10 @@ app.get('/index2', function(req, res) {
     //res.sendFile('./views/index.html');
     res.sendFile(path.join(__dirname, './views', 'index2.html'));
 });
+app.get('/index2#', function(req, res) {
+    //res.sendFile('./views/index.html');
+    res.sendFile(path.join(__dirname, './views', 'index2.html'));
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
