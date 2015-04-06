@@ -111,8 +111,12 @@ function matching(){
     	}
     	
 	} 
-	var output = JSON.stringify(person.match);
-	$('.center_box .output').append(output);
+	//var output = JSON.stringify(person.match);
+    //$('.center_box .output').append(output);
+    $('.center_box .output').empty();
+	$('.center_box .output').append($("<p>")).append("Your match is: ");
+    $('.center_box .output').append($("<p>")).append("Name: ").append(person.match.firstName + " " + person.match.lastName);
+    $('.center_box .output').append($("<p>")).append("Email: ").append(person.match.email);
 
 	console.log("Your match = ", person.match);
 }
